@@ -22,11 +22,11 @@
 		 g2.putImageData(d, 0, 0);
 		 s1.innerHTML=d.data.slice(0,8);
 		  if (d.data.slice(0,3).indexOf(Math.max(...d.data.slice(0,3).map(Number))) == 0){
-            s2.innerHTML = "Kommunist"
+            s2.innerHTML = "Punane"
          } else if (d.data.slice(0,3).indexOf(Math.max(...d.data.slice(0,3).map(Number))) == 1){
-            s2.innerHTML = "puukallistaja"
+            s2.innerHTML = "Roheline"
          } else if (d.data.slice(0,3).indexOf(Math.max(...d.data.slice(0,3).map(Number))) == 2){
-            s2.innerHTML = "avatar"
+            s2.innerHTML = "Sinine"
          }
 		
 	  }
