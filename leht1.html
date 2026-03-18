@@ -13,7 +13,7 @@
 	   navigator.mediaDevices.getUserMedia({video:true}).then((stream) => {
          player.srcObject = stream;
        });
-	   setInterval(capture, 1000);
+	   setInterval(capture, 5000);
 	  }
 	  function capture(){
 	     g.drawImage(player, 0, 0, c.width, c.height);
