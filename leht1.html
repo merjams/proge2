@@ -21,6 +21,14 @@
 		 let d=g.getImageData(100, 100, 40, 40);
 		 g2.putImageData(d, 0, 0);
 		 s1.innerHTML=d.data.slice(0,8);
+		  if (d.data.slice(0,3).indexOf(Math.max(...d.data.slice(0,3).map(Number))) == 0){
+            s2.innerHTML = "Kommunist"
+         } else if (d.data.slice(0,3).indexOf(Math.max(...d.data.slice(0,3).map(Number))) == 1){
+            s2.innerHTML = "puukallistaja"
+         } else if (d.data.slice(0,3).indexOf(Math.max(...d.data.slice(0,3).map(Number))) == 2){
+            s2.innerHTML = "avatar"
+         }
+		
 	  }
 	</script>
   </head>
@@ -29,5 +37,6 @@
 	<canvas id="c1" width="320" height="240" style="width: 45%"/></canvas><br />	 
 	<canvas id="c2" width="40" height="40"/></canvas>	
     <span id="s1"></span>	
+	<span id="s2"></span>
   </body>
 </html>
